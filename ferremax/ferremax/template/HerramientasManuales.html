@@ -1,0 +1,66 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}HerramientasManuales{% endblock title %}
+{% block content %}
+<center>
+    <div class="">
+        <img src="{% static 'IMG/tecnologia/lo mejor en.webp' %}" alt="" class="img-item ml-5 img-container" width="1860">
+    </div>
+</center>
+
+<section class="contenedor">
+    <!-- Contenedor de elementos -->
+    <div class="contenedor-items">
+        <div class="item item bg-light">
+            <span class="titulo-item">Alicate cortante</span>
+                <img src="{% static 'IMG/HerramientasManuales/alicate.webp' %}" alt="" class="img-item">
+                <span class="precio-item">$9.990</span>
+                <p class="card-text">Alicate Cortante stanley</p>
+                <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Esmeril Baucker</span>
+                <img src="{% static 'IMG/HerramientasManuales/esmerilBau.webp' %}" alt="" class="img-item">
+                <span class="precio-item">$33.790</span>
+                <p class="card-text">Esmeril Baucker</p>
+                <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">MAtillo Stanley</span>
+                <img src="{% static 'IMG/HerramientasManuales/martilloStanley.webp' %}" alt="" class="img-item">
+                <span class="precio-item">$20.990</span>
+                <p class="card-text">Martillo acero inoxidable</p>
+                <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Taladro Percutor</span>
+                <img src="{% static 'IMG/HerramientasManuales/taladroPercuBacuker.webp' %}" alt="" class="img-item">
+                <span class="precio-item">$60.990</span>
+                <p class="card-text">Taladro Percutor Baucker</p>
+                <button class="boton-item">Agregar al Carrito</button>
+        </div>
+    </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total</strong>
+                <span class="carrito-precio-total">
+                    $120.000,00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+        </div>
+    </div>
+</section>
+<center>
+    <div>
+        <img src="{% static 'IMG/tecnologia/especial computacion.webp' %}" alt="">
+    </div>
+</center>
+{% endblock content %}

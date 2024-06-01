@@ -1,0 +1,42 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}login{% endblock title %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+
+</head>
+<body>
+    {% if message_error %}
+    <div class="alert alert-danger my-4">
+        {{message_error}}
+    </div>
+    {% endif %}
+    <div class="container-sm">
+        <form class="form-control mt-5" method="POST" action="">{% csrf_token %}
+            <div class="mb-3 row">
+                <label for="username" class="col-sm-2 col-form-label">USERNAME</label>
+                <div class="col-sm-10">
+                  <input type="username" class="form-control plaintext" id="username" name="username" value="" placeholder="USERNAME">
+                </div>
+              </div>
+            <div class="mb-3 row">
+                <label for="password" class="col-sm-2 col-form-label">PASSWORD</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control plaintext" id="password" name="password" value="" placeholder="PASSWORD">
+                </div>
+              </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" type="submit">Login</button>
+            </div>
+        </form>
+        <div class="justify-content-md-end m-2 " >
+            <a href="/update-secret" class="btn btn-danger">Recuperar contraseña</a>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock%}

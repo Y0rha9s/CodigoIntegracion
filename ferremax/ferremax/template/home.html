@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% load static %}
+{% block tittle %}HOME{% endblock tittle%}
+{% block content %}
+
+{% if user.is_authenticated %}
+BIENVENIDO {{user.username}}
+{% else %}
+USUARIO NO AUTENTICADO.
+{% endif %}
+
+{% endblock content %}

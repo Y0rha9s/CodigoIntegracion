@@ -1,0 +1,71 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}Electrodomesticos{% endblock title %}
+{% block content %}
+<section class="contenedor">
+    <div>
+        <img src="{% static 'IMG/electrodomesticos/electro.webp' %} " alt="" class="img-item">
+    </div>
+</section>
+<section class="contenedor">
+    <!-- Contenedor de elementos -->
+    <div class="contenedor-items">
+        <div class="item bg-light">
+            <span class="titulo-item">Cocina mademsa 5 platos</span>
+            <img src="{% static 'IMG/electrodomesticos/cocina.webp' %} " alt="" class="img-item">
+            <span class="precio-item">$319.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Enfriador de aire 5,6 LTS</span>
+            <img src="{% static 'IMG/electrodomesticos/enfriador de aire.webp' %}" alt="" class="img-item">
+            <span class="precio-item">$69.594</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Horno de mesa electrico somela</span>
+            <img src="{% static 'IMG/electrodomesticos/hono.webp' %}" alt="" class="img-item">
+            <span class="precio-item">$64.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">hervidor electrico somela</span>
+            <img src="{% static 'IMG/electrodomesticos/hervidor.webp' %}" alt="" class="img-item">
+            <span class="precio-item">$14.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Lavadora 20 szg mademsa</span>
+            <img src="{% static 'IMG/electrodomesticos/lavadora.webp' %}" alt="" class="img-item">
+            <span class="precio-item">$279.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Refrigerador mademsa nordik</span>
+            <img src="{% static 'IMG/electrodomesticos/refri.webp' %}" alt="" class="img-item">
+            <span class="precio-item">$249.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+    </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total</strong>
+                <span class="carrito-precio-total">
+                    $120.000,00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+        </div>
+    </div>
+</section>
+<div class="mt-4">
+    <img src="{% static 'IMG/electrodomesticos/domotica.webp' %}" alt="">
+</div>
+{% endblock content %}

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border;
+
+}
+
+body {
+    background: linear-gradient(294deg, rgba(255,84,247,1) 5%, rgba(211,218,218,1) 30%, rgba(168,201,206,1) 70%, rgba(0,134,161,1) 100%);
+}
+
+.contenedor .form .form-header .form-title {
+    font-weight: normal;
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    padding: 35px 0;
+}
+.contenedor .form .form-header .form-title span{
+    COLOR: PERU;
+}
+
+.contenedor .form {
+    background: rgb(29, 29, 29);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.contenedor .form .form-label{
+    display: block;
+    color: wheat;
+    font-size: 20px;
+    font-family: Roboto;
+    position: relative;
+}
+
+.contenedor .form .form-input, .form-textarea{
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(0, 217, 255);
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px; 
+    border-radius: 20px;
+    font-size: 14px;
+    color: black;
+    font-family: Roboto;
+
+}
+.contenedor .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+.contenedor .form .btn-submit{
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: #0d2033;
+    font-size: 28px;
+    border: none;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.contenedor .form .btn-submit:hover {
+    background:rgb(255, 168, 47);
+}

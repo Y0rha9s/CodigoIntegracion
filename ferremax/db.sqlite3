@@ -1,0 +1,29 @@
+use compraAhorra;
+
+create table electrodomemstico(
+	id int auto_increment primary key not null,
+    nombre varchar(200),
+    precio int,
+    descripcion varchar(300)
+);
+
+create table tecnologia(
+	id int auto_increment primary key not null,
+    nombre varchar(200),
+    precio int,
+    descripcion varchar(300)
+);
+
+create table moda(
+	id int auto_increment primary key not null,
+    nombre varchar(200),
+    precio int,
+    descripcion varchar(300)
+);
+
+create table historial(
+	id int auto_increment primary key not null,
+    nombre varchar(200),
+    descripcion varchar(300),
+    precio int
+);

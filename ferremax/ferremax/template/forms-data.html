@@ -1,0 +1,33 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}Formulario{% endblock title %}
+{% block content %}
+
+
+<div class="contenedor align-">
+  <form action="/formulario/save" method="POST"> {% csrf_token %}
+    <div class="form-header">
+      <h1 class="form-title"> <span>FORMULARIO SUGERENCIA</span></h1>
+    </div>
+    <label for="nombre" class="form-label">Nombres:</label>
+    <input type="text" class="form-control" id="txt-nombres" name="nombres" placeholder=""
+      onkeyup="escucharTeclado(this)" />
+
+
+    <label for="apellidos" class="form-label">Apellidos:</label>
+    <input type="text" class="form-control" id="txt-apellidos" name="apellidos" placeholder="" />
+
+    <label for="correo" class="form-label">Correo Electronico:</label>
+    <input type="text" class="form-control" id="txt-correo" name="correo" placeholder="" />
+
+    <label for="telefono" class="form-label">Telefono:</label>
+    <input type="text" class="form-control" id="txt-telefono" name="telefono" placeholder="" />
+
+    <label for="sugerencia" class="form-label">Sugerencia:</label>
+    <input type="text" class="form-control" id="txt-sugerencia" name="sugerencia" placeholder="" />
+    </textarea>
+    <br>
+    <center><input type="submit" class="btn-submit" value="Enviar"></center>
+  </form>
+</div>
+
+{% endblock content %}

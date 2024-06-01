@@ -1,0 +1,74 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}moda{% endblock title %}
+{% block content %}
+<center>
+    <div>
+        <img src="{% static 'IMG/moda/ves y cal.webp' %}" alt="">
+    </div>
+</center>
+<section class="contenedor">
+    <!-- Contenedor de elementos -->
+    <div class="contenedor-items">
+        <div class="item bg-light">
+            <span class="titulo-item">Jeans flare monse li azul mujer</span>
+            <img src="{% static 'IMG/moda/jeans flare monse.webp' %}" alt="" class="img-item" height=320 >
+            <span class="precio-item">$9.790</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Jeans Skinny 101 azul hombre</span>
+            <img src="{% static 'IMG/moda/jeans skinny 101.webp' %}" alt="" class="img-item" height=320>
+            <span class="precio-item">$9.600</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Polera pique basica con bolsillo azul</span>
+            <img src="{% static 'IMG/moda/poler apique basica.webp' %}" alt="" class="img-item">
+            <span class="precio-item">$5.590</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Polera just do it Nike</span>
+            <img src="{% static 'IMG/moda/polera just do it nike.webp' %}" alt="" class="img-item">
+            <span class="precio-item">$21.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">zapatilla hombre dc trase</span>
+            <img src="{% static 'IMG/moda/zapatilla hombre dc.webp' %}" alt="" class="img-item" >
+            <span class="precio-item">$29.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item bg-light">
+            <span class="titulo-item">Lomo Vetado</span>
+            <img src="{% static 'IMG/moda/zapatilla mujer ua.webp' %}" alt="" class="img-item">
+            <span class="precio-item">$32.390</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+    </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total</strong>
+                <span class="carrito-precio-total">
+                    $120.000,00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+        </div>
+    </div>
+</section>
+<center>
+    <div class="mt-4">
+        <img src="{% static 'IMG/moda/adidas ozone.webp' %}" alt="">
+    </div>
+</center>
+
+{% endblock content %}

@@ -1,0 +1,268 @@
+/*
+
+body{
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 150px;
+    border: solid black 1px;
+}
+*/
+
+/* crear clase css*/
+/*
+.titulo-principal {
+    color: black;
+    text-align: center;
+}
+
+.texto-justificado{
+    text-align: justify;
+}
+
+.esquinar-texto{
+    text-align: right;
+}
+
+.mt-0{
+    margin-top: 5 !important;
+    margin-bottom: 5 !important;
+}
+
+.margen-lateral{
+    margin-left: 20px;
+}
+*/
+/*nav bar*/
+.nav-bar{
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.nav-bar .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+@media screen and (max-width: 800px){
+    .nav-bar .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/*Pie de pagina css*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+}
+
+.pie-pagina .grupo-1 .box figure h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box  p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/*margenes y otras barras*/
+.barra-sugerencia{
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.barra-sugerencia a{
+    color: yellow;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+.barra-sugerencia a:hover{
+    color: aqua;
+}
+
+.tamaño-imagenCarrusel{
+    width: 1320px;
+    height: 920px;
+}
+
+.margen-general{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Arial";
+}
+
+.margen-general-centro{
+    margin-top: 30px;
+    color: wheat;
+    margin-bottom: 30px;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.margenes-laterales{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.margenes-card{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.myform{
+    max-width: 100%;
+}
+
+.modal-body{
+    padding: 0px;
+}
+
+
+
+.btn-close{
+    position: absolute;
+    right: 0;
+    padding: 1em;
+}
+
+.modal-content{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.modal-body{
+    padding: 0px;
+}
+
+h1{
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.myform{
+    padding: 2em;
+    max-width: 100%;
+    color: #fff;
+    box-shadow: 0 4px 6px 0px rgba(22, 22, 26, 0.18);
+    @media(max-width:576px){
+        max-width: 90%;
+        margin: 0px auto;
+    }
+}
+
+.form-control{
+    
+    color: #000000;
+    padding-left: 0px;
+    border: 0px;
+    border-bottom: 0 1px solid #fff;
+}
+
+.myform .btn{
+    width: 100%;
+    font-weight: 800;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 0.5em 0;
+}
+
+.myform .btn:hover{
+    color: #333;
+}
+
+p{
+    text-align: center;
+    padding-top: 2em;
+    color: grey;
+}
+
+p a{
+    color: #e1e1e1;
+    text-decoration: none;
+}
+
+p a :hover{
+    color: #eee;
+}
+
+.bgNavar{
+    background: linear-gradient(90deg, rgba(34,80,196,1) 0%, rgba(101,133,214,1) 25%, rgba(255,255,255,1) 51%, rgba(104,230,255,1) 75%, rgba(0,212,255,1) 100%);
+}
